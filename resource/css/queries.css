@@ -1,0 +1,207 @@
+
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/*--------------------Big tablet to 1200px------------------*/
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+
+
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+/*--------------------ABOUT--------------------*/
+    .about__img .col {
+        width: 43%;
+    }
+
+    .about__img .col:hover p,
+    .about__img .col:active p {
+    
+        transition: 0.5s;
+        transform: translate(0, -450%);
+        opacity: 1;
+        font-size: 150%;
+        font-weight: 700;
+        color: #fff;
+    }
+/*------------------PRODUCTS-------------------*/
+    .products{
+        padding-bottom: 20px;
+    }
+    .products__class li{
+        width: 65%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .products__class .btn{
+        display: block;
+        margin: 20px auto;
+        width: 60%;
+    }
+    
+/*------------------CONTACTS-------------------*/
+    .contacts__method--infor li {
+        font-size: 105%;
+        margin-top: 10px;
+    }
+    .contacts__method--icons .fab{
+        font-size: 250%;
+    }
+
+    .contacts__col_2{  
+        vertical-align: -20px;
+    }
+    form{
+        margin: 10px 0;
+    }
+    form span{
+        font-size: 120%;
+        font-weight: 500;
+    }
+    input, textarea{
+        font-size: 100%;
+    }
+}
+
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/*------Small tablet to big tablet from 768x to 1023px------*/
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+@media only screen and (max-width: 1023px){
+    html {
+        font-size: 14px;
+    }
+    .row{
+        width: 90%;
+    }
+    /*------------------HEADER-----------------*/   
+    header {
+        height: 500px;
+    }
+    header .menu{
+        visibility: hidden;
+    } 
+    header .content{
+        position: none;
+        top: none;
+        display: block;
+        margin: 0 50%;
+        transform: translate(-30%, -70%);
+    }
+    /*-------------------ABOUT-------------------*/
+    /*------------------PRODUCTS-----------------*/
+    .products__class h3{
+        height: 70px;
+    }
+    .products__class--skill li{
+        width: 90%;
+    }
+    /*---------------TESTIMONIALS---------------*/
+    /*-----------------CONTACTS-----------------*/
+    .contacts .col{
+        width: 80%;
+        margin: 0 10%;
+    }
+    .contacts__method--icons{
+        display: block;
+        margin-left: 50%;
+        transform: translate(-50%);
+        font-size: 130%;
+    }
+}
+
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/*---------Smart phones(Horizontal) to small tablets--------*/
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+
+@media only screen and (max-width: 767px){
+    body{
+        font-size: 12px;
+    }
+    body .row .col{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    /*------------------HEADER-----------------*/ 
+    header .logo{
+        width: 200px;
+    }
+    header .content{
+        transform: translate(-40%, -90%);
+    }
+    header .content .btn{
+        width: 170px;
+    }
+    /*-------------------ABOUT-------------------*/
+    .about__img .col:hover p,
+    .about__img .col:active p {
+        transform: translate(0, -600%);
+    }
+    /*------------------PRODUCTS-----------------*/
+    .products .products__class .col{
+        display: block;
+        width: 300px;
+        margin: 20px auto;
+        padding-bottom: 10px;
+    }
+    /*---------------TESTIMONIALS---------------*/
+    .testimonials blockquote{
+        font-size: 110%;
+    }
+    /*-----------------CONTACTS-----------------*/
+    .contacts__method--icons{
+        width: 80%;
+    }
+    .contacts__row .col_2{
+        display: block;
+        width: 100%;
+    }
+    .contacts__row .col_2_1{
+        margin: 0 0 10px;
+        text-align: center;
+    }
+}
+
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/*----------------smart phone form 0 to 480px---------------*/
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+
+@media only screen and (max-width: 480px){
+    /*------------------HEADER-----------------*/ 
+    header{
+        height: 400px;
+    }
+    header .content{
+        transform: translate(-40%, -110%);
+    }
+    header .content h1{
+        font-size: 200%;
+        margin-bottom: 10px;
+    }
+    header .content li{
+        display: block;
+        margin-bottom: 5px;
+    }
+    /*-------------------ABOUT-------------------*/
+    .about__img .col:hover p,
+    .about__img .col:active p {
+        transform: translate(0, -500%);
+    }
+    /*-----------------CONTACTS-----------------*/
+    .contacts__method--infor .fas{
+        display: block;
+        padding: 20px 0 10px;
+    }
+}
+
+
+
+
+
