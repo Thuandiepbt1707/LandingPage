@@ -10,9 +10,6 @@
     html {
         font-size: 16px;
     }
-    header, section{
-        margin: 0 auto;
-    }
 /*--------------------ABOUT--------------------*/
     .about__img .col {
         width: 45.5%;
