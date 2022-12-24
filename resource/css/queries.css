@@ -221,9 +221,10 @@
 
 @media only screen and (max-width: 480px){
     /*------------------HEADER-----------------*/ 
-    /* header{
-        border: 2px solid red;
-    } */
+    header{
+        /* border: 2px solid red; */
+        height: 100vh;
+    }
     header .menu, .sticky .menu{
         margin-left: auto;
     }
