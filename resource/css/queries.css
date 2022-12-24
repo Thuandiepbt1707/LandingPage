@@ -77,6 +77,7 @@
         font-size: 14px;
     }
     .row{
+        overflow-x: hidden;
         width: 90%;
     }
     /*------------------HEADER-----------------*/   
@@ -128,7 +129,7 @@
     }
     body .row .col{
         width: 70%;
-        margin: 0 auto;
+        margin: 15% 15%;
     }
     /*------------------HEADER-----------------*/ 
     header .logo{
@@ -136,7 +137,13 @@
         margin-top:40px;
     }
     header .menu{
+        width: 20vw;
+        display: block;
         margin-top: 10px;
+    }
+    header .menu li{
+        display: block;
+        margin: 10px 10px;
     }
     header .content{
         transform: translate(-40%, -50%);
@@ -185,13 +192,25 @@
 
 @media only screen and (max-width: 480px){
     /*------------------HEADER-----------------*/ 
-    header{
+    /* header{
         border: 2px solid red;
-        height: 400px;
+    } */
+    header .logo{
+        margin: 4px 4px ;
+    }
+    header .menu{
+
+        width: 100vw;
+        margin: 20vw 0;
+    }
+    header .menu li{
+        display: inline-block;
+        position: relative;
+        transform: translate(60px)        
     }
     header .content{
         transform: translate(-40%, -60%);
-        border: 2px solid red;
+        /* border: 2px solid red; */
     }
     header .content h1{
         font-size: 200%;

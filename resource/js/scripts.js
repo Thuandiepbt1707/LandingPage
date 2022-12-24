@@ -9,7 +9,7 @@ $(document).ready(
                     $('nav').removeClass('sticky');
                 }
             },{
-                offset: '100px'
+                offset: '200px'
             }
         )   
         // scroll smooth
