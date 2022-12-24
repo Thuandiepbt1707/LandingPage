@@ -29,6 +29,9 @@
     .products{
         padding-bottom: 20px;
     }
+    .products__class h3{
+        height: 70px;
+    }
     .products__class li{
         width: 65%;
         margin: 0 auto;
@@ -78,23 +81,19 @@
     }
     /*------------------HEADER-----------------*/   
     header {
-        height: 500px;
+        height: 700px;
     }
-    header .menu{
-        visibility: hidden;
-    } 
+    /* header .menu{
+    }  */
     header .content{
         position: none;
         top: none;
         display: block;
-        margin: 0 50%;
+        margin: 10% 50% 0;
         transform: translate(-30%, -70%);
     }
     /*-------------------ABOUT-------------------*/
     /*------------------PRODUCTS-----------------*/
-    .products__class h3{
-        height: 70px;
-    }
     .products__class--skill li{
         width: 90%;
     }
@@ -109,6 +108,11 @@
         margin-left: 50%;
         transform: translate(-50%);
         font-size: 130%;
+    }
+}
+@media only screen and (max-width: 850px){
+    header .menu{
+        margin-right: 20px;
     }
 }
 
@@ -129,13 +133,20 @@
     }
     /*------------------HEADER-----------------*/ 
     header .logo{
-        width: 200px;
+        width: 60vw;
+        margin-top:40px;
+    }
+    header .menu{
+        margin-top: 10px;
     }
     header .content{
-        transform: translate(-40%, -90%);
+        transform: translate(-40%, -50%);
     }
     header .content .btn{
         width: 170px;
+    }
+    .sticky .logo{
+        margin-top: 22px;
     }
     /*-------------------ABOUT-------------------*/
     .about__img .col:hover p,
@@ -176,10 +187,12 @@
 @media only screen and (max-width: 480px){
     /*------------------HEADER-----------------*/ 
     header{
+        border: 2px solid red;
         height: 400px;
     }
     header .content{
-        transform: translate(-40%, -110%);
+        transform: translate(-40%, -60%);
+        border: 2px solid red;
     }
     header .content h1{
         font-size: 200%;

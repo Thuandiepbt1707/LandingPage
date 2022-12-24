@@ -72,7 +72,9 @@ header{
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
+    width: 100%;
 }
+
 header .logo{
     position: absolute;
     margin-top: 20px;
@@ -119,6 +121,25 @@ header .content .btn{
     width: 190px;
     margin: 0 5px;
 }
+
+/*-------------------sticky------------------*/
+.sticky{
+    background-color: rgb(38, 80, 119, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+.sticky .logo{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.sticky .menu{
+    margin: 15px 100px;
+}
+
+
 /*----------------------------------------------------------------
 -----------------------------ABOUT US-----------------------------
 ----------------------------------------------------------------*/
