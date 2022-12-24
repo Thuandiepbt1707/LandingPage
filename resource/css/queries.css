@@ -7,6 +7,7 @@
 
 @media screen and (max-width: 1200px) {
     html {
+        width: 100vw;
         font-size: 16px;
     }
 /*--------------------ABOUT--------------------*/
@@ -16,13 +17,9 @@
 /*---*/
     .about__img .col:hover p,
     .about__img .col:active p {
-    
-        transition: 0.5s;
         transform: translate(0, -450%);
-        opacity: 1;
         font-size: 150%;
         font-weight: 700;
-        color: #fff;
     }
 /*------------------PRODUCTS-------------------*/
     .products{
@@ -183,7 +180,7 @@
     }
     .about__img .col:hover p,
     .about__img .col:active p {
-        transform: translate(0, -600%);
+        transform: translate(0, -480%);
     }
     /*------------------PRODUCTS-----------------*/
     .products .products__class .col{
