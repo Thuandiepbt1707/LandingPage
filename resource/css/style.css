@@ -129,6 +129,7 @@ header .content .btn{
 
 /*-------------------sticky------------------*/
 .sticky{
+    transition: 1s;
     background-color: rgb(38, 80, 119, 0.7);
     position: fixed;
     top: 0;
@@ -137,10 +138,12 @@ header .content .btn{
     height: 100px;
 }
 .sticky .logo{
+    transition: 0.5s;
     margin-top: 10px;
     margin-left: 40px;
 }
 .sticky .menu{
+    transition: 0.5s;
     margin: 15px 100px;
 }
 
