@@ -9,9 +9,15 @@ html{
     text-rendering: optimizeLegibility;
     font-family: Arial, Helvetica, sans-serif;
 }
+<<<<<<< HEAD
 /* body{
     overflow-x: hidden;
 } */
+=======
+body{
+    /*overflow-x: hidden;*/
+}
+>>>>>>> 72007c724d68d9f1f2631762979ac8df5db8334d
 #full{
     position: absolute;
     top: 0;
