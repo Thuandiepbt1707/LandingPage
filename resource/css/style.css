@@ -8,6 +8,7 @@ html{
     color: #5a5a5a;
     text-rendering: optimizeLegibility;
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
 }
 /* body{
     overflow-x: hidden;
@@ -135,7 +136,7 @@ header .content .btn{
     z-index: 5;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
 .sticky .logo{
