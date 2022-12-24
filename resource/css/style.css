@@ -10,7 +10,7 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 #full{
     position: absolute;
