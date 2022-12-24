@@ -1,4 +1,3 @@
-
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
 /*--------------------Big tablet to 1200px------------------*/
@@ -28,6 +27,10 @@
 /*------------------PRODUCTS-------------------*/
     .products{
         padding-bottom: 20px;
+        /* border: 1px solid; */
+    }
+    .products .row{
+        width: 95%;
     }
     .products__class h3{
         height: 70px;
@@ -79,6 +82,7 @@
     .row{
         overflow-x: hidden;
         width: 90%;
+        margin-left: 5%;
     }
     /*------------------HEADER-----------------*/   
     header {
@@ -110,6 +114,12 @@
         transform: translate(-50%);
         font-size: 130%;
     }
+    .sticky .logo{
+        margin: 10px 10px;
+    }
+    .sticky .menu{
+        margin-right: 0;
+    }
 }
 @media only screen and (max-width: 850px){
     header .menu{
@@ -127,23 +137,26 @@
     body{
         font-size: 12px;
     }
-    body .row .col{
+    /* body .row .col{
         width: 70%;
         margin: 15% 15%;
-    }
+    } */
     /*------------------HEADER-----------------*/ 
-    header .logo{
-        width: 60vw;
-        margin-top:40px;
-    }
+    /* header .logo{
+        margin: 4px 4px ;
+    } */
     header .menu{
-        width: 20vw;
         display: block;
-        margin-top: 10px;
+        /* border: 2px solid red; */
+        /* width: 100vw; */
+        margin-top: 85px;
+        position: relative;
+        right: 0;
     }
     header .menu li{
-        display: block;
-        margin: 10px 10px;
+        /* border: 2px solid red; */
+        display: inline-block;
+        margin: 10px 5px ;        
     }
     header .content{
         transform: translate(-40%, -50%);
@@ -151,10 +164,23 @@
     header .content .btn{
         width: 170px;
     }
+    .sticky{
+        height: auto;
+    }
     .sticky .logo{
         margin-top: 22px;
     }
+    .sticky .menu{
+        margin-top: 85px;
+        font-size: 120%
+    }
     /*-------------------ABOUT-------------------*/
+    h2{
+        padding-bottom: 25px;
+    }
+    .about__content{
+        margin-bottom: 40px;
+    }
     .about__img .col:hover p,
     .about__img .col:active p {
         transform: translate(0, -600%);
@@ -165,6 +191,9 @@
         width: 300px;
         margin: 20px auto;
         padding-bottom: 10px;
+    }
+    .products__class--skill li{
+        font-size: 140%;
     }
     /*---------------TESTIMONIALS---------------*/
     .testimonials blockquote{
@@ -195,18 +224,8 @@
     /* header{
         border: 2px solid red;
     } */
-    header .logo{
-        margin: 4px 4px ;
-    }
-    header .menu{
-
-        width: 100vw;
-        margin: 20vw 0;
-    }
-    header .menu li{
-        display: inline-block;
-        position: relative;
-        transform: translate(60px)        
+    header .menu, .sticky .menu{
+        margin-left: auto;
     }
     header .content{
         transform: translate(-40%, -60%);
@@ -220,6 +239,7 @@
         display: block;
         margin-bottom: 5px;
     }
+
     /*-------------------ABOUT-------------------*/
     .about__img .col:hover p,
     .about__img .col:active p {
@@ -229,6 +249,10 @@
     .contacts__method--infor .fas{
         display: block;
         padding: 20px 0 10px;
+    }
+    /*---------------TESTIMONIALS---------------*/
+    .testimonials .col{
+        width: 90%;
     }
 }
 
