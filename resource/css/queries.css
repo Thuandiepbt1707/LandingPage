@@ -128,8 +128,7 @@
     }
     body .row .col{
         width: 70%;
-        margin-left: 15%;
-        margin-right: 15%;
+        margin: 0 auto;
     }
     /*------------------HEADER-----------------*/ 
     header .logo{
