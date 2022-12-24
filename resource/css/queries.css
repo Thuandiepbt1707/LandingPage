@@ -5,7 +5,7 @@
 /*----------------------------------------------------------*/
 
 
-@media only screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     html {
         font-size: 16px;
     }
@@ -75,7 +75,7 @@
 /*------Small tablet to big tablet from 768x to 1023px------*/
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
-@media only screen and (max-width: 1023px){
+@media screen and (max-width: 1023px){
     html {
         font-size: 14px;
     }
@@ -121,7 +121,7 @@
         margin-right: 0;
     }
 }
-@media only screen and (max-width: 850px){
+@media screen and (max-width: 850px){
     header .menu{
         margin-right: 20px;
     }
@@ -133,7 +133,7 @@
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
 
-@media only screen and (max-width: 767px){
+@media screen and (max-width: 767px){
     body{
         font-size: 12px;
     }
@@ -219,7 +219,7 @@
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
 
-@media only screen and (max-width: 480px){
+@media screen and (max-width: 480px){
     /*------------------HEADER-----------------*/ 
     header{
         /* border: 2px solid red; */
