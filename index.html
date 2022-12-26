@@ -6,41 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Long-term</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./resource/css/style.css">
     <link rel="stylesheet" href="./resource/css/queries.css">
+    <link rel="SHORTCUT ICON" href="./resource/img/icon.png">
 </head>
 
 <body>
     <div id="full">
-        <header id="home">
-            <nav>
-                <a href="#home">
-                    <img class="logo" src="./resource/img/logoL.png" alt="logo">
+        <header id="nav-bar">
+            <nav class="header__nav">
+                <a href="#nav-bar">
+                    <img class="header__nav--logo" src="./resource/img/logoL.png" alt="logo">
                 </a>
-                <div class="menu">
+                <div class="header__nav--menu">
                     <ul>
                         <li><a href="#testimanials">How Client Think</a></li>
-                        <li><a href="#about_us">About</a></li>
+                        <li><a href="#about">About</a></li>
                         <li><a href="#products">Products</a></li>
                         <li><a href="#contacts">Contact</a></li>
                     </ul>
                 </div>
             </nav>
-            
-            <div class="content row">
+            <div class="header__content row">
                 <h1>WE WILL STUDY <br>
                     ENGLISH TOGETHER. <br>
                     SO JOIN WITH US.
                 </h1>
-                <ul>
-                    <li><a href="#about_us" class="btn">Tell me more</a></li>
+                <ul class="header__content--btn">
+                    <li><a href="#about" class="btn">Tell me more</a></li>
                     <li><a href="#products" class="btn">Join us</a></li>
                 </ul>
             </div>
         </header>
     
-        <section id="about_us" class="about_us">
-            <h2>ABOUT US</h2>
+        <section id="about" class="about">
+            <div class="row">
+                <h2>ABOUT US</h2>
             <div class="row">
                 <h1 class="about__content">
                     We are people that are studying English by ourselves, we believe that you don’t need to pay so much
@@ -66,6 +70,8 @@
                     </div>
                 </div>
             </div>
+            </div>
+            
         </section>
     
         <section id="products" class="products">
