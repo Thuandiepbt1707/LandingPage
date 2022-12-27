@@ -4,13 +4,17 @@
     color: gray;
     padding: 0;
     margin: 0;
-}
-html{
-    border: 2px solid red;
     box-sizing: border-box;
 }
-body{
+html{
+    /* border: 2px solid red; */
+}
+/* body{ 
     border: 2px solid red;
+} */
+section{
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 h1, h2, h3{
     font-style: uppercase;
@@ -22,39 +26,72 @@ h1{
     font-size: 400%;
     color: #fff;
 }
+h2{
+    color: orange;
+    font-size: 180%;
+    font-weight: 800;
+    display: block;
+    margin: 0 auto;
+}
+h2::after{
+    display: block;
+    content: '';
+    background-color: orange;
+    height: 3px;
+    width: 180px;
+    margin: 0 auto 5%;
+    opacity: 0.7;
+}
+h3{
+    display: block;
+    color: #fff;
+    font-weight: 600;
+}
+p{
+    color: #022140c4;
+    font-size: 1.2em;
+    text-align: center;
+}
 .row{
-    width: 70%;
-    margin-left: 15%;
+    width: 1200px;
+    margin: 0 auto;
 }
 li{
     list-style: none;
 }
 a{
+    display: block;
     color:#fff;
     text-decoration: none;
 }
 img{
     width: 100%;
 }
-/* .btn{
+.btn{
     background-color: orange;
     border-radius: 15px;
     padding: 15px;
     width: 100%;
-} */
+    transition: 0.5s;
+}
+.btn:hover,
+.btn:active{
+    background-color: rgb(252, 92, 0);
+}
 /*---------------------------------------------------------------------------*/
 /*----------------------------------HEADER-----------------------------------*/
 /*---------------------------------------------------------------------------*/
 
 #nav-bar{
     /* border: 2px solid red; */
-    background-image: linear-gradient(45deg,rgb(2,33,64,80%)55%,rgb(38,80,119,45%)), url(../img/background4.jpeg);
+    background-image: linear-gradient(45deg,rgb(2,33,64,80%)55%,rgb(2, 33, 64,45%)), url(../img/background4.jpeg);
     background-size: cover;
     background-position: fixed;
     background-attachment: fixed;
     display: block;
     height: 100vh;
 }
+/*HEARDER NAV*/
 .header__nav{
     /* border: 2px solid red; */
     display: flex;
@@ -92,6 +129,7 @@ img{
     font-size: 120%;
 }
 
+/*HEADER CONTENT*/
 
 .header__content{
     position: relative;
@@ -100,17 +138,140 @@ img{
     transform: translate(-50%, -50%);
 }
 .header__content--btn li{
+    /* border: 2px solid red; */
     display: inline-block;
     text-align: center;
-    /* width: 160px; */
-    border: 2px solid red;
+    margin: 5px;
+    /* width: 160px; */  
 }
 .header__content--btn .btn{
+    /* border: 2px solid red; */
+    display: block;
+    width: 200px;
+}
+
+/*---------------------------------------------------------------------------*/
+/*---------------------------------ABOUT US----------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+#about{
     border: 2px solid red;
-    width: 300px;
+    text-align: center;
+}
+.about__describe--content{
+    width: 60%;
+    margin: 0 auto 40px;
+}
+.about__describe--img{
+    margin-top: 20px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;   
+}
+.about__describe--img .col{
+    border: 7px solid rgb(202, 227, 250);
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 15px rgb(137, 180, 221);
+    margin: 2%;
+    position:relative;
+}
+.about__describe--img .col div{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg,rgb(2,33,64,80%)35%,rgb(2, 33, 64,45%));
+    border-radius: 8px;
+    opacity: 0;
+    position: absolute;
+    transition: 0.5s;
+}
+.about__describe--img .col span{
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    transition: 0.5s;
+}
+.about__describe--img img{
+    /* border: 2px solid red;    */
+    height: 100%;
+    /* border: 7px; */
+    border-radius: 8px;
+}
+.about__describe--img .col:hover span{
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    width: 90%;
+    padding: 3%;
+}
+.about__describe--img .col:hover div{
+    opacity: 1;
+}
+
+/*---------------------------------------------------------------------------*/
+/*---------------------------------PRODUCTS----------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+#products{
+    border: 2px solid red;
+    background-color: rgb(233, 233, 233);
+    text-align: center;
+}
+.products__class{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+}
+.products__class .col{
+    display: block;
+    border: 2px solid red;
+    background-color: rgb(202, 213, 223);
+    width: 30%;
+    height: 100%;
+    border-radius: 10px;
+    padding-bottom: 0;
+}
+.products__class .col h3{
+    display: block;
+    background-color: rgb(38,80,119);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1em;
+    padding-top: 10px;
+}
+.products__class .col p{
+    border: 2px solid red;
+    margin: 2%;
+    font-size: 200%;
+}
+.products__class .col span{
+    font-size: 80%;
+    color: #022140c4;
+}
+.products__class--skill{
+    /* border: 2px solid red; */
+    display: block;
+}
+.products__class--skill li{
+    /* border: 2px solid red; */
+    display: block;
+    margin: 10px auto;
+    color: #022140c4;
+}
+.products__class .col .btn{
+    display: block;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 10%;
 }
 
 
-/*---------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------*/
+
+
+
