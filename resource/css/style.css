@@ -14,8 +14,7 @@ html{
 } */
 section{
     /* border: 2px solid red; */
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px;
 }
 h1, h2, h3{
     text-transform: uppercase;
@@ -281,6 +280,7 @@ img{
 /*---------------------------------------------------------------------------*/
 /*-------------------------------TESTIMANIALS--------------------------------*/
 /*---------------------------------------------------------------------------*/
+
 #testimanials{
     background-image: linear-gradient(45deg,rgb(2,33,64,80%)55%,rgb(2, 33, 64,45%)), url('../img/background2.jpeg');
     background-position: fixed;
@@ -316,5 +316,50 @@ img{
     border-radius: 50%;
 }
 
+/*---------------------------------------------------------------------------*/
+/*---------------------------------SPONSORS----------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+#sponsors{
+    background-color: rgb(233, 233, 233);
+}
+.sponsors__header{
+    text-align: center;
+}
+.sponsors__logo{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.sponsors__logo .col{
+    /* border: 2px solid red; */
+    display: block;
+    width: 30%;
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+.sponsors__logo .col:hover{
+    transform: scale(1);
+}
+
+/*---------------------------------------------------------------------------*/
+/*---------------------------------CONTACTS----------------------------------*/
+/*---------------------------------------------------------------------------*/
+#contacts{
+    background-image: linear-gradient(45deg,rgb(2,33,64,80%)55%,rgb(2, 33, 64,45%)),  url('../img/background5.jpeg');
+    background-position: fixed;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 
+/*---------------------------------------------------------------------------*/
+/*---------------------------------CONTACTS----------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+.footer{
+    background-color: gray;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
