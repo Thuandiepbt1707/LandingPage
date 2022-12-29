@@ -99,6 +99,9 @@
 @media screen and (max-width: 767.96px){
     /* html{
     } */
+    section{
+        border: 2px solid red;
+    }
     h1{
         font-size: 120%;
     }
