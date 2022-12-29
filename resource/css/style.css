@@ -123,9 +123,6 @@ img{
     padding: 35px 0;
     margin: 10px auto 0;
 }
-.header__nav--menu li{
-    /* border: 2px solid red; */
-}
 .header__nav--menu li:hover,
 .header__nav--menu li:active{
     transition: 0.5s;
