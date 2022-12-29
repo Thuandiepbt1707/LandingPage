@@ -100,7 +100,7 @@
     /* html{
     } */
     section{
-        border: 2px solid red;
+        /* border: 2px solid red; */
         width: 100%;
     }
     h1{
@@ -108,13 +108,14 @@
     }
     .row{
         width: 480px;
+        margin: 0;
     }
     /*----------HEADER------------*/
     #nav-bars{
         height: 350px;
     }
     #nav-bars .box{
-        margin-top: 90px;
+        margin-top: 86px;
         background-image: linear-gradient(45deg,rgb(2,33,64,80%)55%,rgb(2, 33, 64,45%)), url(../img/background4-mobile.jpeg);
         background-size: cover;
         background-position: fixed;
@@ -151,6 +152,7 @@
     }
     .header__nav--menu:hover ul,
     .header__nav--menu:active ul{
+        transition: 0.5s;
         right: 0;
     }
     .header__nav--menu ul{
