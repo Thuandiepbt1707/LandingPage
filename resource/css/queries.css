@@ -105,7 +105,7 @@
         font-size: 120%;
     }
     .row{
-        border: 2px solid red;
+        /* border: 2px solid red; */
         width: 100vw;
         margin: 0;
     }
@@ -236,4 +236,8 @@
             font-weight: 300;
             font-size: 80%;
         }
+    /*-----------FOOTER-------------*/
+    .footer{
+        font-size: 80%;
+    }
 }
