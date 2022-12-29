@@ -8,6 +8,7 @@
 }
 html{
     /* border: 2px solid red; */
+    overflow-x: hidden;
 }
 /* body{ 
     border: 2px solid red;
