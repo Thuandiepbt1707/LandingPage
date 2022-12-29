@@ -9,6 +9,13 @@
         h1{
             font-size:250%
         }
+        h2{
+            font-size: 160%;
+        }
+        h2::after{
+            width: 160px;
+            margin-bottom: 2%;
+        }
         .row{
             width: 750px;
         }
@@ -32,12 +39,56 @@
             height: 350px;
         }
     /*------------ABOUT-------------*/
-        
+        .about__describe--content{
+            margin-bottom: 30px;
+        }
         .about__describe--img{
             flex-direction: column;
         }
     /*----------PRODUCTS------------*/
-    
+        .products__class{
+        }    
+        .products__class .col{
+            width: 32%;
+        }
+        .products__class .col h3{
+            font-size: 0.7;
+            height: 70px;
+        }
+        .products__class .col p{
+            font-size: 160%;
+        }
+        .products__class--skill li{
+            margin-left: 30px;
+            margin-right: 30px;
+            font-size: 81%;
+        }
+        .products__class .col .btn{
+            margin-top: 10%;
+        }
+    /*----------CONTACTS------------*/
+        .contacts__method--infor li{
+            margin-top: 15px;
+            margin-left: 0px;
+            font-size: 80%;
+        }
+        .contacts__method--icons {
+            width: 70%;
+        }
+        .contacts__method--icons .fab{
+            font-size: 250%;
+        }
+        .contacts__mess .box{
+            padding: 10px 27px;
+        }
+        .contacts__mess .box .col1{
+            font-size: 120%;
+        }
+        .contacts__mess .btn{
+            width: 200px;
+            font-weight: 500;
+        }
+
 }
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
@@ -46,7 +97,83 @@
 /*----------------------------------------------------------*/
 
 @media screen and (max-width: 767px){
+    html{
+        overflow-x: hidden;
+    }
+    h1{
+        font-size: 120%;
+    }
+    .row{
+        width: 480px;
+    }
+    /*----------HEADER------------*/
+    #nav-bars{
+        height: 350px;
+    }
+    #nav-bars .box{
+        margin-top: 90px;
+        background-image: linear-gradient(45deg,rgb(2,33,64,80%)55%,rgb(2, 33, 64,45%)), url(../img/background4-mobile.jpeg);
+        background-size: cover;
+        background-position: fixed;
+        background-attachment: fixed;
+        height: 350px;
+    }
+    .header__nav .box-image{
+        background-image: linear-gradient(45deg,rgb(2,33,64)5%,rgb(2, 33, 64));
+        border: 2px solid red;
+        display:block;
+        position: fixed;
+         top: 0;
+         z-index: 10;
+        width: 100%;
+    }
+    .header__nav .box-image a{
+        width: 350px;
+    }
+    /* .header__nav{
+        display: block;
+        height: 80px;
+    } */
+    .header__nav--logo{
+        margin: 10px 0 10px 15px;
+    }
+    .header__nav--menu .fas{
+        display: block;
+        position: fixed;
+         top: 30px;
+         right: 10%;
+         z-index: 10;
+        color: rgb(201, 199, 199);
+        font-size: 150%;
+    }
+    .header__nav--menu:hover ul,
+    .header__nav--menu:active ul{
+        right: 0;
+    }
+    .header__nav--menu ul{
+        background-image: linear-gradient(45deg,rgb(2,33,64)5%,rgb(2, 33, 64));
+        display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+        width: 200px;
+        position: fixed;
+         top: 70px;
+         right: -200px;
+         padding: 0 20px;
+         z-index: 10;
 
+    }
+    .header__nav--menu li{
+        margin: 20px 0;
+    }
+    .header__nav--menu li a{
+        font-size: 90%;
+    }
+    #nav-bars .row{
+    }
+    .header__content--btn li{
+        display: block;
+    }
 }
 
 /*----------------------------------------------------------*/
