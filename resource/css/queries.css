@@ -14,7 +14,7 @@
     }
     /*----------HEADER------------*/
     #nav-bars{
-        height: 800px;
+        height: 500px;
     }
     .header__nav--logo{
         margin-left: 50px;
@@ -29,7 +29,7 @@
         font-size: 90%;
     }
     #nav-bars .row{
-        height: 500px;
+        height: 350px;
     }
     .header__content{
 
