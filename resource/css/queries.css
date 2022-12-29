@@ -13,6 +13,9 @@
         width: 750px;
     }
     /*----------HEADER------------*/
+    #nav-bars{
+        height: 800px;
+    }
     .header__nav--logo{
         margin-left: 50px;
         width: 250px;
@@ -24,6 +27,9 @@
     }
     .header__nav--menu li a{
         font-size: 90%;
+    }
+    #nav-bars .row{
+        height: 500px;
     }
     .header__content{
 
