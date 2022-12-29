@@ -6,124 +6,22 @@
 
 
 @media screen and (max-width: 1200px) {
-    html {
-        width: 100vw;
-        font-size: 16px;
+    .row{
+        width: 750px;
     }
-/*--------------------ABOUT--------------------*/
-    .about__img .col {
-        width: 45.5%;
+    .header__nav--logo{
+        margin-left: 50px;
+        width: 250px;
     }
-/*---*/
-    .about__img .col:hover p,
-    .about__img .col:active p {
-        transform: translate(0, -450%);
-        font-size: 150%;
-        font-weight: 700;
-    }
-/*------------------PRODUCTS-------------------*/
-    .products{
-        padding-bottom: 20px;
-        /* border: 1px solid; */
-    }
-    .products .row{
-        width: 95%;
-    }
-    .products__class h3{
-        height: 70px;
-    }
-    .products__class li{
-        width: 65%;
-        margin: 0 auto;
-        padding: 10px;
-    }
-    .products__class .btn{
-        display: block;
-        margin: 20px auto;
-        width: 60%;
-    }
-    
-/*------------------CONTACTS-------------------*/
-    .contacts__method--infor li {
-        font-size: 105%;
+    .header__nav--menu ul{
+        width: 450px;
+        padding: 20px 0;
         margin-top: 10px;
     }
-    .contacts__method--icons .fab{
-        font-size: 250%;
-    }
-
-    .contacts__col_2{  
-        vertical-align: -20px;
-    }
-    form{
-        margin: 10px 0;
-    }
-    form span{
-        font-size: 120%;
-        font-weight: 500;
-    }
-    input, textarea{
-        font-size: 100%;
+    .header__nav--menu li a{
+        font-size: 90%;
     }
 }
-
-/*----------------------------------------------------------*/
-/*----------------------------------------------------------*/
-/*------Small tablet to big tablet from 768x to 1023px------*/
-/*----------------------------------------------------------*/
-/*----------------------------------------------------------*/
-@media screen and (max-width: 1023px){
-    html {
-        font-size: 14px;
-    }
-    .row{
-        overflow-x: hidden;
-        width: 90%;
-        margin-left: 5%;
-    }
-    /*------------------HEADER-----------------*/   
-    header {
-        height: 700px;
-    }
-    /* header .menu{
-    }  */
-    header .content{
-        position: none;
-        top: none;
-        display: block;
-        margin: 10% 50% 0;
-        transform: translate(-30%, -70%);
-    }
-    /*-------------------ABOUT-------------------*/
-    /*------------------PRODUCTS-----------------*/
-    .products__class--skill li{
-        width: 90%;
-    }
-    /*---------------TESTIMONIALS---------------*/
-    /*-----------------CONTACTS-----------------*/
-    .contacts .col{
-        width: 80%;
-        margin: 0 10%;
-    }
-    .contacts__method--icons{
-        display: block;
-        margin-left: 50%;
-        transform: translate(-50%);
-        font-size: 130%;
-    }
-    .sticky .logo{
-        margin: 10px 10px;
-    }
-    .sticky .menu{
-        margin-right: 0;
-    }
-}
-@media screen and (max-width: 850px){
-    header .menu{
-        margin-right: 20px;
-    }
-}
-
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
 /*---------Smart phones(Horizontal) to small tablets--------*/
@@ -131,83 +29,7 @@
 /*----------------------------------------------------------*/
 
 @media screen and (max-width: 767px){
-    body{
-        font-size: 12px;
-    }
-    /* body .row .col{
-        width: 70%;
-        margin: 15% 15%;
-    } */
-    /*------------------HEADER-----------------*/ 
-    /* header .logo{
-        margin: 4px 4px ;
-    } */
-    header .menu{
-        display: block;
-        /* border: 2px solid red; */
-        /* width: 100vw; */
-        margin-top: 85px;
-        position: relative;
-        right: 0;
-    }
-    header .menu li{
-        /* border: 2px solid red; */
-        display: inline-block;
-        margin: 10px 5px ;        
-    }
-    header .content{
-        transform: translate(-40%, -50%);
-    }
-    header .content .btn{
-        width: 170px;
-    }
-    .sticky{
-        height: auto;
-    }
-    .sticky .logo{
-        margin-top: 22px;
-    }
-    .sticky .menu{
-        margin-top: 85px;
-        font-size: 120%
-    }
-    /*-------------------ABOUT-------------------*/
-    h2{
-        padding-bottom: 25px;
-    }
-    .about__content{
-        margin-bottom: 40px;
-    }
-    .about__img .col:hover p,
-    .about__img .col:active p {
-        transform: translate(0, -480%);
-    }
-    /*------------------PRODUCTS-----------------*/
-    .products .products__class .col{
-        display: block;
-        width: 300px;
-        margin: 20px auto;
-        padding-bottom: 10px;
-    }
-    .products__class--skill li{
-        font-size: 140%;
-    }
-    /*---------------TESTIMONIALS---------------*/
-    .testimonials blockquote{
-        font-size: 110%;
-    }
-    /*-----------------CONTACTS-----------------*/
-    .contacts__method--icons{
-        width: 80%;
-    }
-    .contacts__row .col_2{
-        display: block;
-        width: 100%;
-    }
-    .contacts__row .col_2_1{
-        margin: 0 0 10px;
-        text-align: center;
-    }
+
 }
 
 /*----------------------------------------------------------*/
@@ -217,41 +39,7 @@
 /*----------------------------------------------------------*/
 
 @media screen and (max-width: 480px){
-    /*------------------HEADER-----------------*/ 
-    header{
-        /* border: 2px solid red; */
-        height: 100vh;
-    }
-    header .menu, .sticky .menu{
-        margin-left: auto;
-    }
-    header .content{
-        transform: translate(-40%, -60%);
-        /* border: 2px solid red; */
-    }
-    header .content h1{
-        font-size: 200%;
-        margin-bottom: 10px;
-    }
-    header .content li{
-        display: block;
-        margin-bottom: 5px;
-    }
 
-    /*-------------------ABOUT-------------------*/
-    .about__img .col:hover p,
-    .about__img .col:active p {
-        transform: translate(0, -500%);
-    }
-    /*-----------------CONTACTS-----------------*/
-    .contacts__method--infor .fas{
-        display: block;
-        padding: 20px 0 10px;
-    }
-    /*---------------TESTIMONIALS---------------*/
-    .testimonials .col{
-        width: 90%;
-    }
 }
 
 

@@ -16,7 +16,7 @@
 
 <body>
     <div id="full">
-        <header id="nav-bar">
+        <header id="nav-bars">
             <nav class="header__nav">
                 <a href="#nav-bar">
                     <img class="header__nav--logo" src="./resource/img/logoL.png" alt="logo">
@@ -30,22 +30,24 @@
                     </ul>
                 </div>
             </nav>
-            <div class="header__content row">
-                <h1>WE WILL STUDY <br>
-                    ENGLISH TOGETHER. <br>
-                    SO JOIN WITH US.
-                </h1>
-                <ul class="header__content--btn">
-                    <li><a href="#about" class="btn">Tell me more</a></li>
-                    <li><a href="#products" class="btn">Join us</a></li>
-                </ul>
+            <div class="row">
+                <div class="header__content">
+                    <h1>WE WILL STUDY <br>
+                        ENGLISH TOGETHER. <br>
+                        SO JOIN WITH US.
+                    </h1>
+                    <ul class="header__content--btn">
+                        <li><a href="#about" class="btn">Tell me more</a></li>
+                        <li><a href="#products" class="btn">Join us</a></li>
+                    </ul>
+                </div>
             </div>
         </header>
 
         <section id="about" class="about">
             <div class="row">
                 <div class="about__header">
-                    <h2>ABOUT US</h2> 
+                    <h2>ABOUT US</h2>
                 </div>
                 <div class="about__describe">
                     <p class="about__describe--content">
@@ -82,7 +84,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </section>
 
         <section id="products" class="products">
@@ -225,35 +227,27 @@
                         <li><i class="fab fa-google-plus-square"></i></li>
                     </ul>
                 </div>
-                <div class="contacts__message">
-                    <form>
-                        <div class="contacts__row">
-                            <div class="col_2_1 col_2">
-                                <span>Name</span>
-                            </div>
-                            <div class="col_2_2 col_2">
-                                <input type="text" placeholder="Your Name" class="name">
-                            </div>
-                        </div>
-                        <div class="contacts__row">
-                            <div class="col_2_1 col_2">
-                                <span>Email</span>
-                            </div>
-                            <div class="col_2_2 col_2">
-                                <input type="email" placeholder="Your Email" class="email">
-                            </div>
-                        </div>
-                        <div class="contacts__row">
-                            <div class="col_2_1 col_2">
-                                <span>Message</span>
-                            </div>
-                            <div class="col_2_2 col_2">
-                                <textarea placeholder="Your Message" cols="30" rows="10"></textarea>
-                            </div>
-                        </div>
-                        <button class="btn">Send it</button>
-                    </form>
-                </div>
+                <form class="contacts__mess">
+                    <div class="contacts__mess--name box">
+                        <span class="col1">
+                            Name
+                        </span>
+                        <input class="col2" type="text" placeholder="Your Name" class="name">
+                    </div>
+                    <div class="contacts__mess--mail box">
+                        <span class="col1">
+                            Email
+                        </span>
+                        <input class="col2" type="email" placeholder="Your Email" class="email">
+                    </div>
+                    <div class="contacts__mess--messages box">
+                        <span class="col1">
+                            Message
+                        </span>
+                        <textarea class="col2" placeholder="Your Messages" cols="30" rows="10"></textarea>
+                    </div>
+                    <button class="btn">Send it</button>
+                </form>
             </div>
         </section>
         <section class="footer">

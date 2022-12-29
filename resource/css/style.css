@@ -52,7 +52,11 @@ p{
     font-size: 1.2em;
     text-align: center;
 }
+span{
+    color: #fff;
+}
 .row{
+    border: 2px solid red;
     width: 1200px;
     margin: 0 auto;
 }
@@ -82,7 +86,7 @@ img{
 /*----------------------------------HEADER-----------------------------------*/
 /*---------------------------------------------------------------------------*/
 
-#nav-bar{
+#nav-bars{
     /* border: 2px solid red; */
     background-image: linear-gradient(45deg,rgb(2,33,64,80%)55%,rgb(2, 33, 64,45%)), url(../img/background4.jpeg);
     background-size: cover;
@@ -100,7 +104,7 @@ img{
 }
 .header__nav--logo{
     /* border: 2px solid red; */
-    width: 450px;
+    width: 430px;
     margin-top: 20px;
     margin-left: 70px;
 }
@@ -110,12 +114,13 @@ img{
 .header__nav--menu ul{
     border: 2px solid red;
     display: flex;
-    padding: 0 50px 0 0;
-    margin: 20px auto 0;
+     justify-content: space-around;
+    width: 700px;
+    padding: 40px 0;
+    margin: 10px auto 0;
 }
 .header__nav--menu li{
     /* border: 2px solid red; */
-    margin: 20px;
 }
 .header__nav--menu li:hover,
 .header__nav--menu li:active{
@@ -130,12 +135,13 @@ img{
 }
 
 /*HEADER CONTENT*/
-
+#nav-bars .row{
+    height: 80vh;
+}
 .header__content{
     position: relative;
-    top: 30%;
-    left: 40%;
-    transform: translate(-50%, -50%);
+    top:50%;
+    transform: translateY(-50%);
 }
 .header__content--btn li{
     /* border: 2px solid red; */
@@ -282,7 +288,7 @@ img{
 /*---------------------------------------------------------------------------*/
 
 #testimanials{
-    background-image: linear-gradient(45deg,rgb(2,33,64,80%)55%,rgb(2, 33, 64,45%)), url('../img/background2.jpeg');
+    background-image: linear-gradient(45deg,rgb(2,33,64,80%)55%,rgb(45,95,93,45%)), url('../img/background2.jpeg');
     background-position: fixed;
     background-attachment:fixed;
     background-size: cover;
@@ -346,13 +352,94 @@ img{
 /*---------------------------------CONTACTS----------------------------------*/
 /*---------------------------------------------------------------------------*/
 #contacts{
-    background-image: linear-gradient(45deg,rgb(2,33,64,80%)55%,rgb(2, 33, 64,45%)),  url('../img/background5.jpeg');
+    background-image: linear-gradient(45deg,rgb(2,33,64,80%)55%,rgb(45,95,93,45%)),  url('../img/background5.jpeg');
     background-position: fixed;
     background-size: cover;
     background-attachment: fixed;
 }
-
-
+.contacts .row{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.contacts__method, .contacts__mess{
+    /* border: 2px solid red; */
+    width: 50%;
+}
+.contacts__method--infor{
+    margin: 70px auto;
+}
+.contacts__method--infor li{
+    margin: 30px 0  0 30px;
+    padding-left: 30px;
+    display: flex;
+    color: #fff;
+}
+.contacts__method--infor .fas{
+    margin-right: 10px;
+    font-size: 150%;
+    color: #3d73a5;
+    transition: 0.5s;
+}
+.contacts__method--infor .fas:hover{
+    transform: scale(1.2);
+}
+.contacts__method--icons {
+    /* border: 2px solid red;  */
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: 20px auto;
+}
+.contacts__method--icons .fab{
+    font-size: 300%;
+    color: #fff;
+    transition:0.5;
+}
+.contacts__method--icons .fab:hover{
+    transform: scale(1.05);
+    color: orange;
+}
+.contacts__mess{
+    padding-top: 20px;
+    background-color: rgb(0,0,0,20%);
+    border-radius: 15px;
+}
+.contacts__mess .box{
+    display: flex;
+    padding: 15px 40px;
+}
+.contacts__mess .box .col1{
+    width: 30%;
+    font-size: 150%;
+}
+.contacts__mess .box .col2{
+    /* border: 2px solid red; */
+    flex: 1;
+    width: 100%;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(0, 0, 0, 50%);
+    color: #fff;
+    transition: 1s;
+}
+.contacts__mess .box .col2:focus{
+    background-image: none;
+    background-color: black;
+    color: white;
+}
+.contacts__mess--messages .col2{
+    height: 100px;
+}
+.contacts__mess .btn{
+    display: block;
+    border: none;
+    width: 300px;
+    margin: 0 auto;
+    color: rgb(0,0,0,60%);
+    font-weight: 800;
+}
 /*---------------------------------------------------------------------------*/
 /*---------------------------------CONTACTS----------------------------------*/
 /*---------------------------------------------------------------------------*/
