@@ -95,8 +95,7 @@
 /*---------Smart phones(Horizontal) to small tablets--------*/
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
-
-@media screen and (max-width: 767.96px){
+@media only screen and (max-width: 767px){
     /* html{
     } */
     section{
@@ -181,8 +180,66 @@
     .header__content--btn li{
         display: block;
     }
-}
-
+    /*------------ABOUT-------------*/
+    /*----------PRODUCTS------------*/
+    /*--------TESTIMANIALS----------*/
+        .about__describe--img,
+        .group-col,
+        .products__class,
+        .testimanials__comment,
+        .sponsors__logo{
+            flex-direction:column;
+        }
+        .products__class{
+            height: auto;
+        }
+        .products__class .col,
+        .testimanials__comment .col{
+            display: block;
+            width: 300px;
+            margin: 20px auto;
+        }
+        .products__class .col .btn{
+            margin-bottom: 10%;
+        }
+        .sponsors-box{
+            display: flex;
+        }
+        .sponsors__logo .col{
+            width: 80%;
+            margin: 0 auto;
+        }
+    /*----------CONTACTS------------*/
+        .contacts__method--infor li{
+            margin-top: 10px;
+            margin-left: 0px;
+            font-size: 60%;
+        }
+        .contacts__method--icons .fab{
+            font-size: 200%;
+        }
+        .contacts__mess{
+            padding-top: 10px;
+        }
+        .contacts__mess .box{
+            padding: 10px 20px;
+        }
+        .contacts__mess .box .col1{
+            font-size: 70%;
+        }
+        .contacts__mess .btn{
+            width: 200px;
+            font-weight: 500;
+        }
+        input, textarea{
+            font-size: 70%;
+        }
+        .contacts__mess .btn{
+            padding: 10px;
+            width: 100px;
+            font-weight: 300;
+            font-size: 80%;
+        }
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
 /*----------------smart phone form 0 to 480px---------------*/
@@ -192,6 +249,7 @@
 /* @media screen and (max-width: 480px){
 
 } */
+
 
 
 
