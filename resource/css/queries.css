@@ -6,9 +6,13 @@
 
 
 @media screen and (max-width: 1200px) {
+    h1{
+        font-size:250%
+    }
     .row{
         width: 750px;
     }
+    /*----------HEADER------------*/
     .header__nav--logo{
         margin-left: 50px;
         width: 250px;
@@ -20,6 +24,9 @@
     }
     .header__nav--menu li a{
         font-size: 90%;
+    }
+    .header__content{
+
     }
 }
 /*----------------------------------------------------------*/
