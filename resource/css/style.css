@@ -174,6 +174,10 @@ img{
     display: flex;
     justify-content: space-around;   
 }
+.about__describe--img .group-col{
+    /* border: 2px solid red; */
+    display: flex;
+}
 .about__describe--img .col{
     border: 7px solid rgb(202, 227, 250);
     border-radius: 15px;
