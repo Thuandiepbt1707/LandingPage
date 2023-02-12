@@ -198,7 +198,7 @@
         .products__class .col .btn{
             margin-bottom: 10%;
         }
-        .sponsors-box{
+        .sponsors-box-wrapper{
             display: flex;
         }
         .sponsors__logo .col{
